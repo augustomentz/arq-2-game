@@ -6,11 +6,24 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  :host .credits {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: black;
+    font-weight: 600;
+  }
 </style>
 
 <div class="content" role="main">
   <!-- Terminal -->
   <app-terminal></app-terminal>
+
+  <div class="credits">
+    Desenvolvido para disciplina de Arquitetura de Computadores II pelos alunos
+    Augusto Mentz e Bruno Azzi
+  </div>
 
   <svg
     id="clouds"

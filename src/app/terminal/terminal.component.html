@@ -30,12 +30,12 @@
       <div class="radio-control" *ngFor="let option of question.options">
         <input
           type="radio"
-          id="normal"
+          [id]="option.value"
           name="answer"
           value="{{ option.value }}"
           [(ngModel)]="answer"
         />
-        <label for="normal">{{ option.label }}</label>
+        <label [for]="option.value">{{ option.label }}</label>
       </div>
 
       <button class="btn" (click)="next(question, question.id)">
