@@ -15,7 +15,7 @@
     background-color: rgb(15, 15, 16);
 
     .red {
-      color: #cc0000;
+      color: #ff1919;
     }
 
     &::before {
@@ -56,24 +56,44 @@
       pre {
         color: white;
         margin: 0 0 15px 0;
+        font-family: "Fira Code", monospace;
       }
 
-      .start {
-        .radio-control {
-          color: white;
+      .radio-control {
+        color: white;
+        cursor: pointer;
+        margin: 0 0 2px 0;
+
+        label,
+        input {
           cursor: pointer;
-          margin: 0 0 2px 0;
-
-          label,
-          input {
-            cursor: pointer;
-          }
-
-          label {
-            margin: 0 0 0 10px;
-          }
         }
 
+        label {
+          margin: 0 0 0 10px;
+        }
+      }
+
+      .question {
+        span {
+          position: absolute;
+          right: 20px;
+          color: white;
+        }
+      }
+
+      .game-over,
+      .game-won {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .game-won,
+      .game-over,
+      .start,
+      .question {
         .btn {
           margin: 20px 0 0;
         }
