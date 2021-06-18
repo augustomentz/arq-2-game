@@ -10,28 +10,51 @@ enum GameStatus {
   GAME_WON = 'GAME_WON',
 }
 
+enum GameDifficulty {
+  EASY = 'EASY',
+  MEDIUM = 'MEDIUM',
+  HARD = 'HARD',
+}
+
 @Component({
   selector: 'app-terminal',
   templateUrl: './terminal.component.html',
   styleUrls: ['./terminal.component.scss'],
 })
-export class TerminalComponent implements OnInit {
+export class TerminalComponent {
   GameStatus = GameStatus;
+  GameDifficulty = GameDifficulty;
   questions: Question[] = [];
   question: Question;
   gameStatus = GameStatus.NOT_STARTED;
+  difficulty = GameDifficulty.EASY;
   answer = null;
   lifes = ['LIFE', 'LIFE', 'LIFE', 'LIFE', 'LIFE'];
+  youMistake = false;
 
   constructor(private service: AppService) {}
 
-  async ngOnInit() {
-    this.questions = await this.service.getQuestions().toPromise();
-
-    console.log(this.gameStatus);
-  }
-
   async start() {
+    let numberOfQuestions;
+
+    switch (this.difficulty) {
+      case GameDifficulty.EASY:
+        numberOfQuestions = 15;
+        break;
+      case GameDifficulty.MEDIUM:
+        numberOfQuestions = 20;
+        break;
+      case GameDifficulty.HARD:
+        numberOfQuestions = 25;
+        break;
+      default:
+        numberOfQuestions = 15;
+    }
+
+    this.questions = await this.service
+      .getQuestions(numberOfQuestions)
+      .toPromise();
+
     [this.question] = this.questions;
 
     this.lifes = ['LIFE', 'LIFE', 'LIFE', 'LIFE', 'LIFE'];
@@ -61,6 +84,12 @@ export class TerminalComponent implements OnInit {
   }
 
   error() {
+    this.youMistake = true;
+
+    setTimeout(() => {
+      this.youMistake = false;
+    }, 2000);
+
     if (this.lifes.length < 2) {
       this.gameStatus = GameStatus.GAME_OVER;
 

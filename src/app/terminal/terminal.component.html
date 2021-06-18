@@ -1,21 +1,42 @@
 <div class="terminal">
   <div class="wrapper">
     <div class="start" *ngIf="gameStatus === GameStatus.NOT_STARTED">
-      <pre><span class="red">Como jogar</span>: O jogo consiste em perguntas e respostas, para ganhar basta chegar<br />ao final sem perder toda sua <span class="red">vida</span>. Você começa com 5 vidas, para cada resposta<br />errada você perde 1 vida. Boa sorte! </pre>
+      <pre><span class="red">Como jogar</span>: O jogo consiste em perguntas e respostas, para ganhar basta<br />chegar ao final sem perder toda sua <span class="red">vida</span>. Você começa com 5 vidas, <br />para cada resposta errada você perde 1 vida. Boa sorte!</pre>
       <pre>Escolha a dificuldade:</pre>
 
       <div class="radio-control">
-        <input type="radio" id="facil" name="difficulty" />
+        <input
+          type="radio"
+          id="facil"
+          name="difficulty"
+          [checked]="difficulty === GameDifficulty.EASY"
+          [value]="GameDifficulty.EASY"
+          [(ngModel)]="difficulty"
+        />
         <label for="facil">Fácil (15 perguntas)</label>
       </div>
 
       <div class="radio-control">
-        <input type="radio" id="normal" name="difficulty" />
+        <input
+          type="radio"
+          id="normal"
+          name="difficulty"
+          [checked]="difficulty === GameDifficulty.MEDIUM"
+          [value]="GameDifficulty.MEDIUM"
+          [(ngModel)]="difficulty"
+        />
         <label for="normal">Normal (20 perguntas)</label>
       </div>
 
       <div class="radio-control">
-        <input type="radio" id="dificil" name="difficulty" />
+        <input
+          type="radio"
+          id="dificil"
+          name="difficulty"
+          [checked]="difficulty === GameDifficulty.HARD"
+          [value]="GameDifficulty.HARD"
+          [(ngModel)]="difficulty"
+        />
         <label for="dificil">Difícil (25 perguntas)</label>
       </div>
 
@@ -24,7 +45,7 @@
 
     <div class="question" *ngIf="gameStatus === GameStatus.STARTED && question">
       <span class="counter"
-        >{{ this.question.id }} / {{ this.questions.length }}</span
+        >{{ this.question.number }} / {{ this.questions.length }}</span
       >
       <pre>{{ question.question }}</pre>
       <div class="radio-control" *ngFor="let option of question.options">
@@ -38,31 +59,34 @@
         <label [for]="option.value">{{ option.label }}</label>
       </div>
 
-      <button class="btn" (click)="next(question, question.id)">
-        Confirmar
-      </button>
+      <div class="btn-wrapper">
+        <button class="btn" (click)="next(question, question.number)">
+          Confirmar
+        </button>
+        <p *ngIf="youMistake">ERROU!</p>
+      </div>
     </div>
 
     <div class="game-over" *ngIf="gameStatus === GameStatus.GAME_OVER">
       <pre [style.color]="'#ff1919'" [style.font-size.px]="30">GAME OVER</pre>
       <pre>
-                uuuuuuu
-            uu$$$$$$$$$$$uu
-          uu$$$$$$$$$$$$$$$$$uu
-        u$$$$$$$$$$$$$$$$$$$$$u
-        u$$$$$$$$$$$$$$$$$$$$$$$u
-      u$$$$$$$$$$$$$$$$$$$$$$$$$u
-      u$$$$$$$$$$$$$$$$$$$$$$$$$u
-      u$$$$$$"   "$$$"   "$$$$$$u
-      "$$$$"      u$u       $$$$"
+                 uuuuuuu
+             uu$$$$$$$$$$$uu
+           uu$$$$$$$$$$$$$$$$$uu
+         u$$$$$$$$$$$$$$$$$$$$$u
+         u$$$$$$$$$$$$$$$$$$$$$$$u
+       u$$$$$$$$$$$$$$$$$$$$$$$$$u
+       u$$$$$$$$$$$$$$$$$$$$$$$$$u
+       u$$$$$$"   "$$$"   "$$$$$$u
+       "$$$$"      u$u       $$$$"
         $$$u       u$u       u$$$
         $$$u      u$$$u      u$$$
-        "$$$$uu$$$   $$$uu$$$$"
+         "$$$$uu$$$   $$$uu$$$$"
           "$$$$$$$"   "$$$$$$$"
             u$$$$$$$u$$$$$$$u
-            u$"$"$"$"$"$"$u
+             u$"$"$"$"$"$"$u
   uuu        $$u$ $ $ $ $u$$       uuu
-u$$$$        $$$$$u$u$u$$$       u$$$$
+u$$$$         $$$$$u$u$u$$$       u$$$$
   $$$$$uu      "$$$$$$$$$"     uu$$$$$$
 u$$$$$$$$$$$uu    """""    uuuu$$$$$$$$$$
 $$$$"""$$$$$$$$$$uuu   uu$$$$$$$$$"""$$$"

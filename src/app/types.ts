@@ -3,6 +3,7 @@ export type Question = {
   question: string;
   options: QuestionOption[];
   answer: string;
+  number: number;
 };
 
 type QuestionOption = {
