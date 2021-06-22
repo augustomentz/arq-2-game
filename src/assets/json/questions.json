@@ -1,37 +1,37 @@
 [
   {
     "id": 1,
-    "question": "PERGUNTA 1",
+    "question": "Indica de onde os dados a serem processados devem ser retirados ou para onde devem ser enviados. A comunicação por este meio é unidirecional. Isso é a função do: ",
     "options": [
       {
-        "label": "A",
+        "label": "Barramento de endereço",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Endereço de memória",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Registrador de instrução",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 2,
-    "question": "PERGUNTA 2",
+    "question": "A primeira instrução é buscada da memória e então executada, a seguir, a segunda é buscada e executada, assim sucessivamente até o término do programa (modelo sequencial). Está é uma característica da:",
     "options": [
       {
-        "label": "A",
+        "label": "Unidade Lógica/Aritmética",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Máquina Von Neumann",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "CPU",
         "value": "C"
       }
     ],
@@ -39,75 +39,75 @@
   },
   {
     "id": 3,
-    "question": "PERGUNTA 3",
+    "question": "As características mais importantes da memória são:",
     "options": [
       {
-        "label": "A",
+        "label": "Tamanho, velocidade e tecnologia",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Tamanho, velocidade e segurança",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Velocidade, Segurança e frequência",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 4,
-    "question": "PERGUNTA 4",
+    "question": "Quando se liga o computador, o processador lê e executa o programa que está localizado no(a) ____________ do computador:",
     "options": [
       {
-        "label": "A",
+        "label": "Firmware",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Memória RAM",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Memória ROM",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": 5,
-    "question": "PERGUNTA 5",
+    "question": "O ___________ é um circuito oscilador que tem a função de sincronizar e ditar a medida de velocidade e transferência de dados no computador.",
     "options": [
       {
-        "label": "A",
+        "label": "Chipset",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Transistor",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Clock",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": 6,
-    "question": "PERGUNTA 6",
+    "question": "Barramento que fornece informações adicionais como, por exemplo, se a operação é de leitura ou escrita:",
     "options": [
       {
-        "label": "A",
+        "label": "Endereço",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Controle",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Dados",
         "value": "C"
       }
     ],
@@ -115,56 +115,56 @@
   },
   {
     "id": 7,
-    "question": "PERGUNTA 7",
+    "question": "Realiza ações indicadas nas instruções, executando operações numéricas e não numéricas além da preparação para desvios dos programas.",
     "options": [
       {
-        "label": "A",
+        "label": "ULA",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "UC",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "UCP",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 8,
-    "question": "PERGUNTA 8",
+    "question": "Memória que traz os dados da memória principal, que estão sendo mais utilizados, para a memória rápida e mais próxima do processador.",
     "options": [
       {
-        "label": "A",
+        "label": "Memória Cache",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Memória Flash-ROM",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Memória Dinâmica",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 9,
-    "question": "PERGUNTA 9",
+    "question": "Via de comunicação por onde circulam os dados tratados pelo computador.",
     "options": [
       {
-        "label": "A",
+        "label": "Memória",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Barramento",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Disco Rígido",
         "value": "C"
       }
     ],
@@ -172,18 +172,18 @@
   },
   {
     "id": 10,
-    "question": "PERGUNTA 10",
+    "question": "Neste processador, como não existem instruções complexas, o compilador deve converter comandos complexos em diversas instruções simples que deem o mesmo resultado de operação.",
     "options": [
       {
-        "label": "A",
+        "label": "SIMD",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "RISC",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "CISC",
         "value": "C"
       }
     ],
@@ -191,18 +191,18 @@
   },
   {
     "id": 11,
-    "question": "PERGUNTA 11",
+    "question": "Componente básico para qualquer chip que é obtido através da fusão de silício junto com os materiais que permitirão sua dopagem posteriormente",
     "options": [
       {
-        "label": "A",
+        "label": "Transistor",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Wafer",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Diodo",
         "value": "C"
       }
     ],
@@ -210,75 +210,75 @@
   },
   {
     "id": 12,
-    "question": "PERGUNTA 12",
+    "question": "Várias unidades de processamento executando programas de forma cooperativa, com controle centralizado ou não.",
     "options": [
       {
-        "label": "A",
+        "label": "Array Processor",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Firmware",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Máquina paralela",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": 13,
-    "question": "PERGUNTA 13",
+    "question": "Um programa quando armazenado em ROM, recebe o nome de ______.",
     "options": [
       {
-        "label": "A",
+        "label": "Firmware",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Software",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Malware",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 14,
-    "question": "PERGUNTA 14",
+    "question": "O ________________ armazena códigos de condição gerados pela ULA e eventualmente por outros elementos como sinais de interrupção gerados pelos dispositivos de entrada e saída.",
     "options": [
       {
-        "label": "A",
+        "label": "Registrador de Estado",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Registrador de Instrução",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Apontador de Pilha",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 15,
-    "question": "PERGUNTA 15",
+    "question": "Nome dado ao conjunto de circuitos integrados cuja função é realizar diversas funções de hardware como controle dos barramentos, controle e acesso à memória, controle da interface dentre outras:",
     "options": [
       {
-        "label": "A",
+        "label": "Placa Mãe",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Chipset",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "BIOS",
         "value": "C"
       }
     ],
@@ -286,18 +286,18 @@
   },
   {
     "id": 16,
-    "question": "PERGUNTA 16",
+    "question": "Nome do Registrador que recebe o resultado da instrução.",
     "options": [
       {
-        "label": "A",
+        "label": "Registrador de instrução",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Acumulador",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Contador de programa",
         "value": "C"
       }
     ],
@@ -305,18 +305,18 @@
   },
   {
     "id": 17,
-    "question": "PERGUNTA 17",
+    "question": "Consiste em um computador com múltiplas CPUs, múltiplos programas rodam simultaneamente, cada um é executado em seu próprio processador, são características do(a):",
     "options": [
       {
-        "label": "A",
+        "label": "Multiprogramação",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Multiprocessamento",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Array Processor",
         "value": "C"
       }
     ],
@@ -324,75 +324,75 @@
   },
   {
     "id": 18,
-    "question": "PERGUNTA 18",
+    "question": "Método que consiste em dividir o processo de execução da instrução em partes. Visa aproveitar as unidades – que a princípio ficariam ociosas – para começarem a executar a próxima instrução do programa.",
     "options": [
       {
-        "label": "A",
+        "label": "Time Slicing",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Multiprogramação",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Pipeline",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": 19,
-    "question": "PERGUNTA 19",
+    "question": "A estrutura inicial de uma Máquina de Von Neumann é composta por:",
     "options": [
       {
-        "label": "A",
+        "label": "Memória, Unidade Lógica/Aritmética, Unidade de controle de programa, Equipamentos de entrada e Equipamentos de saída.",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Memória, Unidade Lógica/Aritmética, Unidade de controle de programa, Unidade central de processamento.",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Memória, Unidade Lógica/Aritmética, Unidade de controle de programa, Registrador de estado e Registrador de instrução.",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 20,
-    "question": "PERGUNTA 20",
+    "question": "Neste processador, uma instrução complexa equivale a várias microinstruções presentes no microcódigo do processador.",
     "options": [
       {
-        "label": "A",
+        "label": "RISC",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "MIMD",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "CISC",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": 21,
-    "question": "PERGUNTA 21",
+    "question": "Faz a interface entre o hardware e as funções de mais alto nível do sistema operacional.",
     "options": [
       {
-        "label": "A",
+        "label": "POST",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "BIOS",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "SETUP",
         "value": "C"
       }
     ],
@@ -400,75 +400,75 @@
   },
   {
     "id": 22,
-    "question": "PERGUNTA 22",
+    "question": "Memória com menor densidade, não necessita ser analisada ou recarregada a cada momento. Portanto não necessita de circuitos adicionais visto que guarda a informação por todo o tempo em que estiver recebendo energia elétrica:",
     "options": [
       {
-        "label": "A",
+        "label": "Memória Dinâmica",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Memória ROM",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Memória Cache",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": 23,
-    "question": "PERGUNTA 23",
+    "question": "O que NÃO é uma característica das Máquinas de Von Neumann?",
     "options": [
       {
-        "label": "A",
+        "label": "Existência de múltiplos caminhos entre memória e unidade de processamento",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Execução sequencial de instruções",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Utilização do conceito de programa armazenado",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 24,
-    "question": "PERGUNTA 24",
+    "question": "Elementos digitais com capacidade de armazenar dados, Espaço de trabalho temporário, Quantidade e a função variam de acordo com o projeto do processador. São características do(a):",
     "options": [
       {
-        "label": "A",
+        "label": "Memória interna",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Endereço de memória",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Registrador",
         "value": "C"
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": 25,
-    "question": "PERGUNTA 25",
+    "question": "O Registrador mais importante, tem como função manter atualizado o endereço de memória da próxima instrução que será executada:",
     "options": [
       {
-        "label": "A",
+        "label": "Apontador de pilha (Stack Pointer - SP)",
         "value": "A"
       },
       {
-        "label": "B",
+        "label": "Contador de programa (Program Counter - PC)",
         "value": "B"
       },
       {
-        "label": "C",
+        "label": "Registrador de estado (Instruction Register - IR)",
         "value": "C"
       }
     ],

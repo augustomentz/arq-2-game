@@ -47,7 +47,7 @@
       <span class="counter"
         >{{ this.question.number }} / {{ this.questions.length }}</span
       >
-      <pre>{{ question.question }}</pre>
+      <div class="question-text">{{ question.question }}</div>
       <div class="radio-control" *ngFor="let option of question.options">
         <input
           type="radio"

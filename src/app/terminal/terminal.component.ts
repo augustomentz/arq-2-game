@@ -81,6 +81,7 @@ export class TerminalComponent {
     }
 
     this.question = this.questions[index];
+    this.answer = null;
   }
 
   error() {
