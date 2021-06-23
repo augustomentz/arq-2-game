@@ -17,6 +17,7 @@ export class AppService {
           .slice(0, numberOfQuestions)
           .map((question: Question, index) => ({
             ...question,
+            options: this.shuffle(question.options),
             number: index + 1,
           }));
 
