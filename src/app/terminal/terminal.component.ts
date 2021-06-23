@@ -93,6 +93,7 @@ export class TerminalComponent {
 
     if (this.lifes.length < 2) {
       this.gameStatus = GameStatus.GAME_OVER;
+      this.answer = null;
 
       return;
     }
